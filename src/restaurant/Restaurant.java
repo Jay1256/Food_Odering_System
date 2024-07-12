@@ -1,4 +1,4 @@
-package Restaurant;
+package restaurant;
 
 import java.util.*;
 import java.sql.*;
