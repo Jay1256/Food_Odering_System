@@ -1,0 +1,2 @@
+username,name,email,PhoneNumber,appartno,buildingnumber,street,city,state,pincode
+Smarty_mark,Mark Zuckerberg,mark@meta.in,7229038208,A-78,Bhagwan Nagar Soc.,near Govindwadi,Ahmedabad,Gujarat,382443

@@ -7,7 +7,7 @@ public class Address {
     private String state;
     private String zipCode;
 
-    public Address(String appartNo, String bulidingName, String city, String street, String state, String zipCode) {
+    public Address(String appartNo, String bulidingName, String street, String city, String state, String zipCode) {
         this.appartNo = appartNo;
         this.bulidingName = bulidingName;
         this.street = street;
@@ -39,11 +39,10 @@ public class Address {
     public String getZipCode() {
         return zipCode;
     }
-    //Just For  Testing Gonna Update it
+    
     @Override
     public String toString() {
-        return "Address [appartNo=" + appartNo + ", bulidingName=" + bulidingName + ", city=" + city + ", street="
-                + street + ", state=" + state + ", zipCode=" + zipCode + "]";
+        return appartNo + ", " + bulidingName +  ", " + street +  ", " + city + ", " + state + ", " + zipCode ;
     }
 
     
