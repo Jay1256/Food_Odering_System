@@ -4,7 +4,14 @@ import java.util.*;
 import java.sql.*;
 import java.io.*;
 
-public class Restaurant {
+class Restaurant extends Thread {
+    Website w;
+    Order o;
+    Restaurant(Website w,Order o){
+        this.w = w;
+        this.o = o;
+    }
+
     int rid;
     String rname;
     long rphone;
@@ -16,6 +23,19 @@ public class Restaurant {
         this.rphone = rphone;
         this.raddress = raddress;
     }
+
+    // part of consumer producer problem
+    public void run() {
+        for(int i=1;i<=w.size;i++){
+            try {
+                w.produce(o);
+                Thread.sleep(1000);
+            } catch (Exception e) {
+                System.out.println(e);
+            }
+        }
+    }
+
 
     public int getRid() {
         return rid;
